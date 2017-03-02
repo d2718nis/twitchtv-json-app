@@ -1,14 +1,16 @@
 /* ========== Tags section ========== */
 html {
-  height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  height: 100vh; }
 
-body {
+html > body {
   margin: auto;
   color: #444;
-  min-height: 100%;
   background-color: #eee;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
 
 h1 {
   font-weight: bold; }
@@ -37,6 +39,9 @@ body > .container-top {
   @media (min-width: 768px) {
     .header h1 {
       float: left; } }
+
+.fa-twitch {
+  min-width: 36.016px; }
 
 .app-title {
   color: #17141f;
@@ -108,6 +113,9 @@ body > .container-top {
   display: none; }
 
 /* ========== Channels Not Exist ========== */
+.channels-notExist {
+  margin-bottom: 40px; }
+
 .channels-notExist-header {
   text-transform: uppercase;
   cursor: default;
@@ -167,5 +175,27 @@ body > .container-top {
 
 .channel-description {
   color: #808080; }
+
+/* ========== Credits ========== */
+.credits {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 5px;
+  background-color: #ddd;
+  font-size: 12px; }
+
+.credits-link {
+  color: #898395;
+  text-decoration: none;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+
+.credits-link:hover,
+.credits-link:active,
+.credits-link:focus {
+  color: #392e5c;
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

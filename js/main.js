@@ -146,7 +146,7 @@ function displayChannelsNotExist() {
 						</div>
 					</div>
 				</div>
-				`).appendTo('.channels-not-exist');
+				`).appendTo('.channels-notExist');
 		}
 	});
 }

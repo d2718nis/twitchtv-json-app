@@ -22,10 +22,7 @@ html > body {
 	flex-direction: column;
 	height: 100vh;
 }
-h1 {
-	font-weight: bold;
-}
-h1, h2, h3 {
+h2, h3 {
 	margin-top: 10px;
 }
 body > .container-top {
@@ -44,8 +41,10 @@ body > .container-top {
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-.header h1 {
+.header .header-text {
 	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
 	@include for-min-768 {
 		float: left;
 	}
@@ -100,8 +99,6 @@ body > .container-top {
 .header-menu > .menu-active {
 	background-color: #201c2b;
 	color: #faf9fa;
-}
-.header-menu > .menu-active:hover {
 }
 .header-menu > li:hover {
 	border: 1px solid #2c2541;

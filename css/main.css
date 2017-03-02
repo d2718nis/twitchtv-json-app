@@ -12,10 +12,7 @@ html > body {
   flex-direction: column;
   height: 100vh; }
 
-h1 {
-  font-weight: bold; }
-
-h1, h2, h3 {
+h2, h3 {
   margin-top: 10px; }
 
 body > .container-top {
@@ -34,10 +31,12 @@ body > .container-top {
   overflow: hidden;
   margin-bottom: 20px; }
 
-.header h1 {
-  text-align: center; }
+.header .header-text {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px; }
   @media (min-width: 768px) {
-    .header h1 {
+    .header .header-text {
       float: left; } }
 
 .fa-twitch {

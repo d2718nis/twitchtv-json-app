@@ -1,0 +1,201 @@
+@mixin for-min-768 {
+	@media (min-width: 768px) { 
+		@content;
+	}
+}
+@mixin for-min-992 {
+	@media (min-width: 992px) { 
+		@content;
+	}
+}
+/* ========== Tags section ========== */
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+body {
+	margin: auto;
+	color: #444;
+	min-height: 100%;
+	background-color: #eee;
+	font-family: 'Roboto', sans-serif;
+}
+h1 {
+	font-weight: bold;
+}
+h1, h2, h3 {
+	margin-top: 10px;
+}
+body > .container-top {
+	max-width: 100%;
+	width: 100%;
+}
+.container {
+	max-width: 1000px;
+}
+/* ========== Page header ========== */
+.header {
+	background-color: #17141f;
+	color: #fff;
+	cursor: default;
+	padding: 5px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.header h1 {
+	text-align: center;
+	@include for-min-768 {
+		float: left;
+	}
+}
+.app-title {
+	color: #17141f;
+	font-family: 'Black Ops One', cursive;
+	text-shadow:
+		-1px 0 #fff,
+		-2px 0 #fff,
+		0 1px #fff,
+		0 2px #fff,
+		1px 0 #fff,
+		2px 0 #fff,
+		0 -1px #fff,
+		0 -2px #fff,
+		-1px 2px #eee,
+		-2px 1px #fff,
+		-2px 3px #eee,
+		-3px 2px #fff,
+		-3px 4px #eee,
+		-4px 3px #fff,
+		-4px 5px #eee,
+		-5px 4px #fff,
+		-5px 6px #eee,
+		-6px 5px #fff;
+}
+.header-menu-container {
+	float: right;
+	text-align: center;
+}
+.header-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	@include for-min-768 {
+		float: right;
+	}
+}
+.header-menu > li {
+	line-height: 60px;
+	color: #898395;
+	border: 1px solid #17141f;
+	padding: 20px;
+	display: inline;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+.header-menu > .menu-active {
+	background-color: #201c2b;
+	color: #faf9fa;
+}
+.header-menu > .menu-active:hover {
+}
+.header-menu > li:hover {
+	border: 1px solid #2c2541;
+}
+/* ========== Search ========== */
+.search-container {
+	padding-top: 10px;
+	@include for-min-992 {
+		padding-top: 20px;
+	}
+}
+.header input {
+	background-color: #201c26;
+	box-shadow: 0 0 0 1px #392e5c inset;
+	color: #dad8de;
+	width: 100%;
+	border: 0;
+	padding: 4px;
+	transition: all 0.2s;
+	font-size: 13px;
+}
+.header input:focus {
+	box-shadow: 0 0 0 1px #7d5bbe inset;
+	border: 0 none;
+	outline: 0 none;
+}
+/* ========== Channels Live ========== */
+.channels-live-header {
+	text-transform: uppercase;
+	cursor: default;
+	margin-bottom: 10px;
+	display: none;
+}
+/* ========== Channels Offline ========== */
+.channels-offline-header {
+	text-transform: uppercase;
+	cursor: default;
+	margin-bottom: 10px;
+	display: none;
+}
+/* ========== Channels Not Exist ========== */
+.channels-notExist-header {
+	text-transform: uppercase;
+	cursor: default;
+	margin-bottom: 10px;
+	display: none;
+}
+/* ========== Channels Items ========== */
+.channel-item {
+	padding-bottom: 20px;
+}
+.channel-item-disabled {
+	padding-bottom: 20px;
+	cursor: default;
+}
+.row .channel-item-disabled > .channel-info > .channel-text > .channel-name {
+	color: #666;
+}
+.channel-stream {
+	box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12), 0 0 4px 0 rgba(0,0,0,.12);
+	transition: all 0.2s;
+}
+.channel-stream:hover {
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+.channel-stream:hover + .channel-info {
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+.channel-info {
+	overflow: hidden;
+	background-color: #fff;
+	// background-color: #17141f;
+	padding: 5px;
+	box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12), 0 0 4px 0 rgba(0,0,0,.12);
+	transition: all 0.2s;
+}
+.channel-info:hover {
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+.channel-item-disabled .channel-info:hover {
+	box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12), 0 0 4px 0 rgba(0,0,0,.12);
+}
+.channel-logo {
+	width: 25%;
+	float: left;
+}
+.channel-text {
+	width: 75%;
+	float: right;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+.channel-name, 
+.channel-name:active, 
+.channel-name:visited {
+	font-size: 16px;
+	color: #17141f;
+	transition: all 0.2s;
+}
+.channel-description {
+	color: #808080;
+}

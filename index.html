@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- Mobile font size fix -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TwitchTV JSON App</title>
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Black+Ops+One" rel="stylesheet">
+		<!-- Font awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Bootstrap 3 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- jQuery 3 -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<!-- Local styles and scripts -->
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<!-- ========== Header ========== -->
+		<div class="container container-top">
+			<div class="header row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h1><i class="fa fa-twitch" aria-hidden="true"></i> <span class="app-title">twitchster</span></h1>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 header-menu-container">
+					<ul class="header-menu">
+						<li class="menu-all menu-active">ALL</li>
+						<li class="menu-live">LIVE</li>
+						<li class="menu-offline">OFFLINE</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 search-container">
+					<input class="text-center" type="text" placeholder="Filter results">
+				</div>
+			</div>
+		</div>
+		<!-- ========== Content ========== -->
+		<div class="container">
+			<div class="row channels-live">
+				<div class="col-xs-12 text-center channels-live-header">
+					<p>LIVE</p>
+				</div>
+			</div>
+			<div class="row channels-offline">
+				<div class="col-xs-12 text-center channels-offline-header">
+					<p>OFFLINE</p>
+				</div>
+			</div>
+			<div class="row channels-not-exist">
+				<div class="col-xs-12 text-center channels-notExist-header">
+					<p>DOES NOT EXIST</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

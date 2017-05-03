@@ -1,10 +1,10 @@
 @mixin for-min-768 {
-	@media (min-width: 768px) { 
+	@media (min-width: 768px) {
 		@content;
 	}
 }
 @mixin for-min-992 {
-	@media (min-width: 992px) { 
+	@media (min-width: 992px) {
 		@content;
 	}
 }
@@ -18,7 +18,7 @@ html > body {
 	color: #444;
 	background-color: #eee;
 	font-family: 'Roboto', sans-serif;
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 	height: 100vh;
 }
@@ -191,11 +191,11 @@ body > .container-top {
 .channel-text {
 	width: 75%;
 	float: right;
-	padding-left: 10px;
+	padding-left: 8px;
 	padding-top: 2px;
 }
-.channel-name, 
-.channel-name:active, 
+.channel-name,
+.channel-name:active,
 .channel-name:visited {
 	font-size: 16px;
 	color: #17141f;
@@ -221,8 +221,8 @@ body > .container-top {
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
-.credits-link:hover, 
-.credits-link:active, 
+.credits-link:hover,
+.credits-link:active,
 .credits-link:focus {
 	color: #392e5c;
 	text-decoration: none;

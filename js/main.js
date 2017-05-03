@@ -65,7 +65,7 @@ function requestTwitchStream(channel) {
 var menuBar = [$('.menu-all'), $('.menu-live'), $('.menu-offline')];
 
 function trimLongDescription(str) {
-	return str.length > 27 ? str.substr(0, 23) + '...' : str;
+	return str.length > 26 ? str.substr(0, 22) + '...' : str;
 }
 
 // Display all LIVE channels

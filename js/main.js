@@ -2,7 +2,7 @@
 channelsObject = [];
 
 // ==================== ====================
-const apiBaseUrl = 'https://wind-bow.gomix.me/twitch-api';
+const apiBaseUrl = 'https://wind-bow.glitch.me/twitch-api';
 
 // Request info about channels
 function requestTwitchChannel(channelName) {
@@ -155,10 +155,10 @@ function displayChannelsNotExist() {
 
 // ==================== ====================
 $(document).ready(function() {
-	const channelsList = ['ESL_SC2', 'OgamingSC2', 
-		'cretetion', 'freecodecamp', 'storbeck', 'comster404', 
-		'habathcx', 'RobotCaleb', 'noobs2ninjas', 'monstercat', 
-		'streamerhouse', 'ninety9lives', 'nocopyrightsounds', 
+	const channelsList = ['ESL_SC2', 'OgamingSC2',
+		'cretetion', 'freecodecamp', 'storbeck', 'comster404',
+		'habathcx', 'RobotCaleb', 'noobs2ninjas', 'monstercat',
+		'streamerhouse', 'ninety9lives', 'nocopyrightsounds',
 		'warcraft', 'geekandsundry', 'magic', 'bethesda'];
 
 	// Request all info

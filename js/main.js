@@ -82,7 +82,7 @@ function displayChannelsLive() {
 					</div>
 					<div class="channel-info">
 						<div class="channel-logo">
-							<img class="img-responsive logo-img" src="${item.json.stream.channel.logo===null?'https://placehold.it/100?text=User':item.json.stream.channel.logo}" alt="${item.json.stream.channel.display_name}">
+							<img class="img-responsive logo-img" src="${item.json.stream.channel.logo===null?'img/404_user_70x70.png':item.json.stream.channel.logo}" alt="${item.json.stream.channel.display_name}">
 						</div>
 						<div class="channel-text">
 							<span class="channel-name">${item.json.stream.channel.display_name}</span>
@@ -110,7 +110,7 @@ function displayChannelsOffline() {
 					<div class="col-xs-12 col-sm-6 col-md-4 channel-item">
 						<div class="channel-info">
 							<div class="channel-logo">
-								<img class="img-responsive logo-img" src="${item.json.logo===null?'https://placehold.it/100?text=User':item.json.logo}" alt="${item.json.display_name}">
+								<img class="img-responsive logo-img" src="${item.json.logo===null?'img/404_user_70x70.png':item.json.logo}" alt="${item.json.display_name}">
 							</div>
 							<div class="channel-text">
 								<span class="channel-name">${item.json.display_name}</span>
@@ -137,7 +137,7 @@ function displayChannelsNotExist() {
 				<div class="col-xs-12 col-sm-6 col-md-4 channel-item-disabled">
 					<div class="channel-info">
 						<div class="channel-logo">
-							<img class="img-responsive logo-img" src="https://placehold.it/100?text=User" alt="User not exist">
+							<img class="img-responsive logo-img" src="img/dead_glitch.png" alt="User not exist">
 						</div>
 						<div class="channel-text">
 							<span class="channel-name">${item.name}</span>

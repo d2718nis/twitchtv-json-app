@@ -45,13 +45,11 @@ Built with
 ----------
 * [Twitch Developers](https://dev.twitch.tv) &#8212; the one-stop shop to learn how to build tools and integrations 
   for the leading social video platform for gamers
-* [JQuery](https://jquery.com) &#8212; a fast, small, and feature-rich JavaScript library
+* [jQuery](https://jquery.com) &#8212; a fast, small, and feature-rich JavaScript library
 * [Bootstrap](http://getbootstrap.com) &#8212; the most popular HTML, CSS, and JS framework for developing
   responsive, mobile first projects on the web
 * [SASS](http://sass-lang.com) &#8212; the most mature, stable, and powerful professional grade CSS extension
   language in the world
-* CSS3
-* HTML5
 
 
 Authors
